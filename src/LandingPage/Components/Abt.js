@@ -1,0 +1,37 @@
+import React from 'react'
+import vector from '../../Images/Vector 1.png'
+import h1 from '../../Images/f1.png'
+import h2 from '../../Images/f2.png'
+import { Link } from 'react-router-dom'
+
+
+const About = () => {
+  return (
+    <div>
+        <div className="abt">
+            <h2>About Us</h2>
+            <img src={vector} alt=""  className='v1'/>
+
+            <div className='hero-c'>
+
+                <div className='h-l'>
+                <h2>Empowering Classy Techies: Crafting World-Class Skills at Techtan</h2>
+                <p>Welcome to Techtan, where sophistication meets technology in a space tailored for grownups, working-class professionals, and individuals who value standard trainings and a refined learning environment.</p>
+                <button><Link to='/about'>Learn More</Link></button>
+                </div>
+
+                <div className='abt-img'>
+                
+                <img src={h1} className='img'/>
+                <img src={h2} />
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+  )
+}
+
+export default About
