@@ -7,6 +7,7 @@ import { MdOutlineNoteAlt } from "react-icons/md";
 import { TbUsersGroup } from "react-icons/tb";
 import { FaFileDownload } from "react-icons/fa";
 import { GrCertificate } from "react-icons/gr";
+import { Link } from 'react-router-dom';
 
 
 
@@ -181,7 +182,7 @@ const Packages = () => {
                     </span>
 
 
-                    <button className='btn' style={{backgroundColor:'silver'}}><a href="">Sign Up</a></button>
+                    <button className='btn' style={{backgroundColor:'silver'}}><Link to='/enroll'>Sign Up</Link></button>
 
 
                 </div>
@@ -267,7 +268,7 @@ const Packages = () => {
                     </span>
 
 
-                    <button className='btn'><a href="">Sign Up</a></button>
+                    <button className='btn'><Link to='/enroll'>Sign Up</Link></button>
 
 
                 </div>
@@ -355,7 +356,7 @@ const Packages = () => {
                     </span>
 
 
-                    <button className='btn' style={{backgroundColor:'lightblue'}}><a href="">Sign Up</a></button>
+                    <button className='btn' style={{backgroundColor:'lightblue'}}><Link to='/enroll'>Sign Up</Link></button>
 
 
                 </div>

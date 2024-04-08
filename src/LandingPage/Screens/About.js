@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, useLocation } from 'react-router-dom';
+import React, { useEffect } from "react";
+import { useLocation } from 'react-router-dom';
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 import AboutH from '../Components/AboutH'

@@ -1,6 +1,6 @@
 import ReactPlayer from 'react-player';
-import React, { useState, useEffect, useRef } from "react";
-import { BrowserRouter as Router, Route, useLocation } from 'react-router-dom';
+import React, {useEffect, useRef } from "react";
+import { useLocation } from 'react-router-dom';
 import Header from '../Components/Header'
 import { PiVideoThin } from "react-icons/pi";
 import { MdOutlineNoteAlt } from "react-icons/md";

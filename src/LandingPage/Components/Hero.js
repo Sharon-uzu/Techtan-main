@@ -59,8 +59,8 @@ const Hero = () => {
 
         <div className='h-r'>
           
-          <img src={hero1} className='abs-img img1'/>
-          <img src={heror} className='abs-img img2'/>
+          <img src={hero1} className='abs-img img1' alt=''/>
+          <img src={heror} className='abs-img img2' alt=''/>
         </div>
 
       </div>
@@ -76,7 +76,7 @@ const Hero = () => {
         </div>
 
         <div className='h-r'>
-          <img src={hero2} className='abs-img'/>
+          <img src={hero2} className='abs-img' alt=''/>
         </div>
 
       </div>

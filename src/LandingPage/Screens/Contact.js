@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, useLocation } from 'react-router-dom';
+import React, { useEffect } from "react";
+import { useLocation } from 'react-router-dom';
 import Header from '../Components/Header'
 import { MdOutlineMailOutline } from "react-icons/md";
 import { MdOutlinePhoneInTalk } from "react-icons/md";
@@ -40,7 +40,7 @@ const Contact = () => {
                         </div>
                     </a>
 
-                    <a>
+                    <a href="#">
                         <MdOutlinePhoneInTalk className='con-i'/>
                         <div>
                             <h6>Phone Number</h6>
@@ -48,7 +48,7 @@ const Contact = () => {
                         </div>
                     </a>
 
-                    <a>
+                    <a href="#">
                         <CiLocationOn className='con-i'/>
                         <div>
                             <h6>Location</h6>
@@ -57,10 +57,10 @@ const Contact = () => {
                     </a>
 
                     <div className='socials'>
-                        <a href=""><FaFacebookF className='sos-i'/></a>
-                        <a href=""><FaInstagram className='sos-i'/></a>
-                        <a href=""><FaTwitter className='sos-i'/></a>
-                        <a href=""><CiLinkedin className='sos-i'/></a>
+                        <a href="#"><FaFacebookF className='sos-i'/></a>
+                        <a href="#"><FaInstagram className='sos-i'/></a>
+                        <a href="#"><FaTwitter className='sos-i'/></a>
+                        <a href="#"><CiLinkedin className='sos-i'/></a>
                     </div>
 
                 </div>

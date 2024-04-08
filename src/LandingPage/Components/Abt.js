@@ -10,7 +10,7 @@ const About = () => {
     <div>
         <div className="abt">
             <h2>About Us</h2>
-            <img src={vector} alt=""  className='v1'/>
+            <img src={vector} alt="vector"  className='v1'/>
 
             <div className='hero-c'>
 
@@ -22,8 +22,8 @@ const About = () => {
 
                 <div className='abt-img'>
                 
-                <img src={h1} className='img'/>
-                <img src={h2} />
+                <img src={h1} className='img' alt=''/>
+                <img src={h2} alt=''/>
                 </div>
 
             </div>

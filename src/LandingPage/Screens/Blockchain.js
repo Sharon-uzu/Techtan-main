@@ -1,15 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { BrowserRouter as useLocation } from 'react-router-dom';
+import React from "react";
 import Header from '../Components/Header'
 import hero1 from '../../Images/course.jpeg';
 import { FaEarListen, FaHandshakeSimple, FaLandmarkDome } from 'react-icons/fa6';
 import { FaClock, FaComment, FaLaptop, FaPlane, FaSmile } from 'react-icons/fa';
-import img from '../../Images/course.jpeg'
 import { Link } from 'react-router-dom'
 import Footer from '../Components/Footer'
-import data from '../../Images/data.jpeg'
-import product from '../../Images/product.webp'
-import web from '../../Images/web.png'
 import app from '../../Images/app.avif'
 import digital from '../../Images/digital.avif'
 import graphics from '../../Images/graphics.webp'
@@ -29,13 +24,13 @@ const Blockchain = () => {
                <div>
                 <h2>BlockChain Academy</h2>
                 <p>Welcome to Techtan's Blockchain Academy, your gateway to mastering the revolutionary technology of blockchain. At our academy, we offer comprehensive training programs designed to equip individuals with the knowledge, skills, and expertise needed to thrive in the blockchain industry.</p>
-                <a href=""><button>Learn More</button></a>
+                <a href="#more"><button>Learn More</button></a>
                </div>
                <img src={hero1} alt="" />
             </div>
         </section>
 
-        <section className='block1'>
+        <section className='block1' id="more">
             <div className='block1-l'>
                 <h3>BlockChain <span>Academy</span></h3>
                 <p>Led by industry experts and experienced instructors, our curriculum covers a wide range of topics including blockchain fundamentals, smart contracts, decentralized applications (DApps), cryptocurrency, and more. Through hands-on projects, practical exercises, and real-world case studies, students gain valuable insights and practical experience in working with blockchain technologies.</p>

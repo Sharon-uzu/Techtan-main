@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, useLocation } from "react-router-dom";
+import {  useLocation } from "react-router-dom";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import vector from "../../Images/Vector 1.png";
 import Modal from "react-modal";
 import { FaArrowCircleLeft } from "react-icons/fa";
 import { Supabase } from "../../config/supabase-config";
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 
 // paystack config
-import { usePaystackPayment, PaystackButton } from "react-paystack";
+import { 
+  // usePaystackPayment,
+   PaystackButton } from "react-paystack";
 
 const Enroll = () => {
   // const [email, setEmail] = useState('');
@@ -32,29 +34,29 @@ const Enroll = () => {
     batch: "",
   };
 
-  const [inputValue, setInputValue] = useState("");
+  // const [inputValue, setInputValue] = useState("");
 
   const navigate = useNavigate();
-  const congrat = () => {
-    navigate("/Congrat");
-  };
+  // const congrat = () => {
+  //   navigate("/Congrat");
+  // };
 
   const [formData, setFormData] = useState(initialValues);
-  const [formErrors, setFormErrors] = useState({});
+  // const [formErrors, setFormErrors] = useState({});
 
-  const [isSubmit, setIsSubmit] = useState(false);
+  // const [isSubmit, setIsSubmit] = useState(false);
 
   // const handleSubmit = (e) => {
   //   setFormErrors(validate(formData));
   //   setIsSubmit(true);
   // };
 
-  useEffect(() => {
-    console.log(formErrors);
-    if (Object.keys(formErrors).length === 0 && isSubmit) {
-      console.log(formData);
-    }
-  }, [formErrors]);
+  // useEffect(() => {
+  //   console.log(formErrors);
+  //   if (Object.keys(formErrors).length === 0 && isSubmit) {
+  //     console.log(formData);
+  //   }
+  // }, [formErrors]);
 
   const config = {
     reference: new Date().getTime(),
@@ -80,17 +82,17 @@ const Enroll = () => {
   };
 
   // you can call this function anything
-  const onSuccess = (reference) => {
-    // Implementation for whatever you want to do with reference and after success call.
-    console.log(reference);
-    dataBase();
-  };
+  // const onSuccess = (reference) => {
+  //   // Implementation for whatever you want to do with reference and after success call.
+  //   console.log(reference);
+  //   dataBase();
+  // };
 
   // you can call this function anything
-  const onClose = () => {
-    // implementation for  whatever you want to do when the Paystack dialog closed.
-    console.log("closed");
-  };
+  // const onClose = () => {
+  //   // implementation for  whatever you want to do when the Paystack dialog closed.
+  //   console.log("closed");
+  // };
 
   // const initializePayment = usePaystackPayment(config);
 
@@ -136,7 +138,7 @@ const Enroll = () => {
 
   const handleAmountChange = (e) => {
     setAmount(e.target.value);
-    const selectedValue = e.target.value;
+    // const selectedValue = e.target.value;
     setFormData({
       ...formData,
       amount: amount,
@@ -216,12 +218,12 @@ const Enroll = () => {
     }
   };
 
-  const handleUpload = (e) => {
-    setFormData({
-      ...formData,
-      course: e.target.value,
-    });
-  };
+  // const handleUpload = (e) => {
+  //   setFormData({
+  //     ...formData,
+  //     course: e.target.value,
+  //   });
+  // };
 
   function closeModal() {
     setIsModalOpen(false);
@@ -390,7 +392,7 @@ const Enroll = () => {
               />
             </div>
 
-            <p
+            {/* <p
               style={{
                 color: "red",
                 fontSize: "14px",
@@ -400,7 +402,7 @@ const Enroll = () => {
               }}
             >
               {formErrors.fullname}
-            </p>
+            </p> */}
           </label>
 
           <label htmlFor="course">
@@ -421,7 +423,7 @@ const Enroll = () => {
               />
             </div>
 
-            <p
+            {/* <p
               style={{
                 color: "red",
                 fontSize: "14px",
@@ -431,7 +433,7 @@ const Enroll = () => {
               }}
             >
               {formErrors.email}
-            </p>
+            </p> */}
           </label>
 
           <label htmlFor="course">
@@ -452,7 +454,7 @@ const Enroll = () => {
               />
             </div>
 
-            <p
+            {/* <p
               style={{
                 color: "red",
                 fontSize: "14px",
@@ -462,7 +464,7 @@ const Enroll = () => {
               }}
             >
               {formErrors.phone}
-            </p>
+            </p> */}
           </label>
 
           <label htmlFor="gender">
@@ -484,7 +486,7 @@ const Enroll = () => {
               </select>
             </div>
 
-            <p
+            {/* <p
               style={{
                 color: "red",
                 fontSize: "14px",
@@ -494,7 +496,7 @@ const Enroll = () => {
               }}
             >
               {formErrors.gender}
-            </p>
+            </p> */}
           </label>
 
           {course ? (
@@ -584,7 +586,7 @@ const Enroll = () => {
           <h3>Select Batch</h3>
           <img src={vector} alt="" />
 
-          <section className="batch" aria-disabled>
+          <section className="batch" disabled>
             <div
               className="div"
               style={{

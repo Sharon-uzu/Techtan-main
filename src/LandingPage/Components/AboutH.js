@@ -1,8 +1,5 @@
 import React from 'react'
-import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import hero1 from '../../Images/h-img.png';
-import hero2 from '../../Images/h2.png'
 import { Link } from 'react-router-dom'
 import img from '../../Images/h-img.png'
 import img1 from '../../Images/Frame 1028.png'
