@@ -32,7 +32,7 @@ const Contact = () => {
             <form className='contact-f'>
                 <div className='c-l'>
                     <h4>Contact Information</h4>
-                    <a href="mailto:hi@mytechtan.com">
+                    <a href="mailto:hi@mytechtan.com" className="link">
                         <MdOutlineMailOutline className='con-i'/>
                         <div>
                             <h6>Email Address</h6>
@@ -40,7 +40,7 @@ const Contact = () => {
                         </div>
                     </a>
 
-                    <a href="#">
+                    <a href="tel:093635" className="link">
                         <MdOutlinePhoneInTalk className='con-i'/>
                         <div>
                             <h6>Phone Number</h6>
@@ -48,19 +48,19 @@ const Contact = () => {
                         </div>
                     </a>
 
-                    <a href="#">
+                    <div className="link">
                         <CiLocationOn className='con-i'/>
                         <div>
                             <h6>Location</h6>
                             <p>No. 7 Umuechem Street, Dline, Behind Energymatic Filling Station, Olu Obasanjo, PH.</p>
                         </div>
-                    </a>
+                    </div>
 
                     <div className='socials'>
-                        <a href="#"><FaFacebookF className='sos-i'/></a>
-                        <a href="#"><FaInstagram className='sos-i'/></a>
-                        <a href="#"><FaTwitter className='sos-i'/></a>
-                        <a href="#"><CiLinkedin className='sos-i'/></a>
+                        <a href="https://facebook.com"><FaFacebookF className='sos-i'/></a>
+                        <a href="https://instagram.com"><FaInstagram className='sos-i'/></a>
+                        <a href="https://twitter.com"><FaTwitter className='sos-i'/></a>
+                        <a href="https://linkedin.com"><CiLinkedin className='sos-i'/></a>
                     </div>
 
                 </div>

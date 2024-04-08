@@ -13,27 +13,27 @@ const Footer = () => {
 
                 <div>
                     <h5>Our Services</h5>
-                    <a  href='#'> Traning</a>
-                    <a href='#'>Consultancy</a>
-                    <a href='#'>Tech Off-shoring</a>
-                    <a href='#'>Technical Support</a>
-                    <a href='#'>BlockChain Academy</a>
+                    <p> Traning</p>
+                    <p>Consultancy</p>
+                    <p>Tech Off-shoring</p>
+                    <p>Technical Support</p>
+                    <p>BlockChain Academy</p>
                 </div>
 
                 <div>
                     <h5>Courses</h5>
-                    <a  href='#'> Data Analysis</a>
-                    <a href='#'>Product Design</a>
-                    <a href='#'>Web Development</a>
-                    <a href='#'>Graphics Design</a>
-                    <a href='#'>Digital Marketing</a>
+                    <p> Data Analysis</p>
+                    <p>Product Design</p>
+                    <p>Web Development</p>
+                    <p>Graphics Design</p>
+                    <p>Digital Marketing</p>
                 </div>
 
                 <div>
                     <h5>Events</h5>
                  
-                    <a href='#'>TechTalk</a>
-                    <a href='#'>Founders TimeOut</a>
+                    <p>TechTalk</p>
+                    <p>Founders TimeOut</p>
                     
                 </div>
 
