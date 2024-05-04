@@ -14,7 +14,7 @@ import {
    PaystackButton } from "react-paystack";
 
 const Enroll = () => {
-  // const [email, setEmail] = useState('');
+  const [email, setEmail] = useState('');
   const [amount, setAmount] = useState(0);
   const [pay, setPay] = useState(false);
 
@@ -164,10 +164,12 @@ const Enroll = () => {
   const [front, setFront] = useState(false);
   const [dc, setDc] = useState(false);
   const [back, setBack] = useState(false);
-  const [mobile, setMobile] = useState(false);
-  const [graphic, setGraphic] = useState(false);
+  
+  const [fullstack, setFullstack] = useState(false);
+  const [productMgt, setProductMgt] = useState(false);
   const [data, setData] = useState(false);
   const [cyber, setCyber] = useState(false);
+  const [dataScience, setDataScience] = useState(false);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const toggleModal = () => {
@@ -194,27 +196,30 @@ const Enroll = () => {
     setFront(selectedValue === "frontend");
     setDc(selectedValue === "dc");
     setBack(selectedValue === "backend");
-    setMobile(selectedValue === "mobile");
-    setGraphic(selectedValue === "graphic");
+    setFullstack(selectedValue === "fullstack");
+    setDataScience(selectedValue === "datascience");
     setData(selectedValue === "dataAnalysis");
     setCyber(selectedValue === "cybersecurity");
+    setProductMgt(selectedValue === "productmgt");
 
     if (selectedValue === "productDesign") {
-      setAmount(150000);
+      setAmount(175000);
     } else if (selectedValue === "frontend") {
-      setAmount(200000);
-    } else if (selectedValue === "dc") {
-      setAmount(120000);
-    } else if (selectedValue === "backend") {
-      setAmount(200000);
-    } else if (selectedValue === "mobile") {
       setAmount(250000);
-    } else if (selectedValue === "graphic") {
-      setAmount(100000);
+    } else if (selectedValue === "dc") {
+      setAmount(150000);
+    } else if (selectedValue === "backend") {
+      setAmount(300000);
+    } else if (selectedValue === "fullstack") {
+      setAmount(500000);
+    } else if (selectedValue === "datascience") {
+      setAmount(350000);
     } else if (selectedValue === "dataAnalysis") {
       setAmount(150000);
     } else if (selectedValue === "cybersecurity") {
       setAmount(150000);
+    }else if (selectedValue === "productmgt") {
+      setAmount(175000);
     }
   };
 
@@ -243,19 +248,25 @@ const Enroll = () => {
   const [frontWeekdays, setFrontWeekdays] = useState(false);
   const [dcWeekdays, setDcWeekdays] = useState(false);
   const [backWeekdays, setBackWeekdays] = useState(false);
-  const [mobileWeekdays, setMobileWeekdays] = useState(false);
-  const [graphicWeekdays, setGraphicWeekdays] = useState(false);
+  
   const [dataWeekdays, setDataWeekdays] = useState(false);
   const [cyberWeekdays, setCyberWeekdays] = useState(false);
+
+  const [datascienceWeekdays, setDatascienceWeekdays] = useState(false);
+  const [fullstackWeekdays, setFullstackWeekdays] = useState(false);
+  const [productmgtWeekdays, setProductmgtWeekdays] = useState(false);
 
   const [productWeekend, setProductWeekend] = useState(false);
   const [frontWeekend, setFrontWeekend] = useState(false);
   const [dcWeekend, setDcWeekend] = useState(false);
   const [backWeekend, setBackWeekend] = useState(false);
-  const [mobileWeekend, setMobileWeekend] = useState(false);
-  const [graphicWeekend, setGraphicWeekend] = useState(false);
+  
   const [dataWeekend, setDataWeekend] = useState(false);
   const [cyberWeekend, setCyberWeekend] = useState(false);
+
+  const [datascienceWeekend, setDatascienceWeekend] = useState(false);
+  const [fullstackWeekend, setFullstackWeekend] = useState(false);
+  const [productmgtWeekend, setProductmgtWeekend] = useState(false);
 
   const [scheduleText, setScheduleText] = useState("");
 
@@ -284,10 +295,12 @@ const Enroll = () => {
     setDataWeekdays(selectedValue === "dataWeekdays");
     setDataWeekend(selectedValue === "dataWeekend");
 
-    setGraphicWeekdays(selectedValue === "graphicWeekdays");
-    setGraphicWeekend(selectedValue === "graphicWeekend");
-    setMobileWeekdays(selectedValue === "mobileWeekdays");
-    setMobileWeekend(selectedValue === "mobileWeekend");
+    setDatascienceWeekdays(selectedValue === "datascienceWeekdays");
+    setDatascienceWeekend(selectedValue === "datascienceWeekend");
+    setFullstackWeekdays(selectedValue === "fullstackweekdays");
+    setFullstackWeekend(selectedValue === "fullstackweekend");
+    setProductmgtWeekdays(selectedValue === "productmgtWeekdays");
+    setProductmgtWeekend(selectedValue === "productmgtWeekend");
   };
 
   const [clickedContent, setClickedContent] = useState("");
@@ -513,9 +526,10 @@ const Enroll = () => {
                     <option value="frontend">Frontend Development</option>
                     <option value="backend">Backend Development</option>
                     <option value="dataAnalysis">Data Analysis</option>
-                    <option value="graphic">Graphic Design</option>
-                    <option value="mobile">Mobile Developmaent</option>
+                    <option value="datascience">Data Science</option>
+                    <option value="fullstack">Fullstack Web Developmaent</option>
                     <option value="cybersecurity">Cybersecurity</option>
+                    <option value="productmgt">Product Management</option>
                   </select>
                 </div>
               </label>
@@ -1136,23 +1150,23 @@ const Enroll = () => {
                   </>
                 ) : null}
 
-                {/* GRAPHICS */}
+                {/* fullstack */}
 
-                {graphic ? (
+                {fullstack ? (
                   <label htmlFor="learning">
                     <p>Learning:</p>
 
                     <div>
                       <select onChange={handleScheduleChange}>
                         <option value="">Select schedule</option>
-                        <option value="graphicWeekdays">Week Days</option>
-                        <option value="graphicWeekend">Weekend</option>
+                        <option value="fullstackweekdays">Week Days</option>
+                        <option value="fullstackweekend">Weekend</option>
                       </select>
                     </div>
                   </label>
                 ) : null}
 
-                {graphicWeekdays ? (
+                {fullstackWeekdays ? (
                   <>
                     <i className="click">
                       Click on any of the box below to select a schedule *
@@ -1199,7 +1213,7 @@ const Enroll = () => {
                   </>
                 ) : null}
 
-                {graphicWeekend ? (
+                {fullstackWeekend ? (
                   <>
                     <i className="click">
                       Click on any of the box below to select a schedule *
@@ -1224,23 +1238,23 @@ const Enroll = () => {
                   </>
                 ) : null}
 
-                {/* mobile */}
+                {/* Data science */}
 
-                {mobile ? (
+                {dataScience ? (
                   <label htmlFor="learning">
                     <p>Learning:</p>
 
                     <div>
                       <select onChange={handleScheduleChange}>
                         <option value="">Select schedule</option>
-                        <option value="mobileWeekdays">Week Days</option>
-                        <option value="mobileWeekend">Weekend</option>
+                        <option value="datascienceWeekdays">Week Days</option>
+                        <option value="datascienceWeekend">Weekend</option>
                       </select>
                     </div>
                   </label>
                 ) : null}
 
-                {mobileWeekdays ? (
+                {datascienceWeekdays ? (
                   <>
                     <i className="click">
                       Click on any of the box below to select a schedule *
@@ -1287,7 +1301,96 @@ const Enroll = () => {
                   </>
                 ) : null}
 
-                {mobileWeekend ? (
+                {datascienceWeekend ? (
+                  <>
+                    <i className="click">
+                      Click on any of the box below to select a schedule *
+                    </i>
+
+                    <section className="batch" onClick={handleClick}>
+                      <div className="div">
+                        <h5>Morning Session: </h5>
+                        <p>Saturday: 9am</p>
+                      </div>
+
+                      <div className="div">
+                        <h5>Afternoon Session: </h5>
+                        <p>Saturday: 2pm</p>
+                      </div>
+
+                      <div className="div">
+                        <h5>Evening Session: </h5>
+                        <p>Saturday: 5pm</p>
+                      </div>
+                    </section>
+                  </>
+                ) : null}
+
+
+                {/* Product Management */}
+
+                {productMgt ? (
+                  <label htmlFor="learning">
+                    <p>Learning:</p>
+
+                    <div>
+                      <select onChange={handleScheduleChange}>
+                        <option value="">Select schedule</option>
+                        <option value="productmgtWeekdays">Week Days</option>
+                        <option value="productmgtWeekend">Weekend</option>
+                      </select>
+                    </div>
+                  </label>
+                ) : null}
+
+                {productmgtWeekdays ? (
+                  <>
+                    <i className="click">
+                      Click on any of the box below to select a schedule *
+                    </i>
+
+                    <section className="batch" onClick={handleClick}>
+                      <div className="div">
+                        <h5>Morning Session: </h5>
+                        <p>
+                          Monday:9am <br />
+                          <br />
+                          Tuesday:11am <br />
+                          <br />
+                          Wednessday:9am{" "}
+                        </p>
+                      </div>
+
+                      <div className="div">
+                        <h5>Afternoon Session</h5>
+                        <p>
+                          Monday:2pm <br />
+                          <br />
+                          Tuessday:2pm <br />
+                          <br />
+                          Wednessday:1pm{" "}
+                        </p>
+                      </div>
+
+                      <div className="div">
+                        <h5>Evening Session</h5>
+                        <p>
+                          Monday:4pm <br />
+                          <br />
+                          Tuesday:5pm <br />
+                          <br />
+                          Wednesday:4pm{" "}
+                        </p>
+                      </div>
+                    </section>
+
+                    <p className="arr-back" onClick={rev}>
+                      <FaArrowCircleLeft /> Back{" "}
+                    </p>
+                  </>
+                ) : null}
+
+                {productmgtWeekend ? (
                   <>
                     <i className="click">
                       Click on any of the box below to select a schedule *

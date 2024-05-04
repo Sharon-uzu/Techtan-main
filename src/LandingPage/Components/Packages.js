@@ -8,6 +8,19 @@ import { TbUsersGroup } from "react-icons/tb";
 import { FaFileDownload } from "react-icons/fa";
 import { GrCertificate } from "react-icons/gr";
 import { Link } from 'react-router-dom';
+import { RiPassValidLine } from "react-icons/ri";
+import { FaBook } from "react-icons/fa";
+import { FaTabletAlt } from "react-icons/fa";
+import { SiInternetcomputer } from "react-icons/si";
+import { MdSwitchAccessShortcutAdd } from "react-icons/md";
+import { RiVipFill } from "react-icons/ri";
+import { SiAudiotechnica } from "react-icons/si";
+import { FaSlideshare } from "react-icons/fa6";
+import { SiGooglescholar } from "react-icons/si";
+import { LuNetwork } from "react-icons/lu";
+
+
+
 
 
 
@@ -55,7 +68,9 @@ const Packages = () => {
     <div>
         <section className='pkg'>
             <h3>Premium Packages</h3>
+            
             <img src={vector} alt=""  className='v1'/>
+            <p>You can become a Techtan premium member and enjoy exclusive offers with your membership card.</p>
 
             <div className="view">
 
@@ -65,10 +80,10 @@ const Packages = () => {
                         <h5> Siver Plan</h5>
                         
                         <section>
-                          <p>Access to videos</p>
-                          <p>Assignments</p>
-                          <p className='pi'>Physical Meetup</p>
-                          <p className='pi'>Downloadable Resources</p>
+                          <p>12 months validity period</p>
+                          <p>Access to 3 main courses</p>
+                          <p className='pi'>Get 1 internet router</p>
+                          <p className='pi'>Get 1 tablet for free</p>
                         </section>
 
                         <main>
@@ -81,10 +96,10 @@ const Packages = () => {
                         <FaGem className='p-img p1'/>
                         <h5>Gold Plan</h5>
                         <section>
-                          <p>Access to videos</p>
-                          <p>Assignments</p>
-                          <p className='pi'>Physical Meetup</p>
-                          <p className='pi'>Downloadable Resources</p>
+                          <p>18 months validity period</p>
+                          <p>Access to 2 main courses</p>
+                          <p className='pi'>Scholarship to one of your kids/ward</p>
+                          <p className='pi'>Get 1 tablet for free</p>
                         </section>
 
                         <main>
@@ -96,10 +111,10 @@ const Packages = () => {
                         <FaGem className='p-img p3'/>
                         <h5>Diamond Plan</h5>
                         <section>
-                          <p>Access to videos</p>
-                          <p>Assignments</p>
-                          <p className='pi'>Physical Meetup</p>
-                          <p className='pi'>Downloadable Resources</p>
+                          <p>24 months validity period</p>
+                          <p>Access to 3 main courses</p>
+                          <p className='pi'>Scholarship to two of your kids/wards</p>
+                          <p className='pi'>Get 1 tablet for free</p>
                         </section>
 
                         <main>
@@ -148,41 +163,60 @@ const Packages = () => {
 
               
 
-                    <h3 style={{color:'silver'}}>SILVER</h3>
+                    <h3 style={{color:'silver'}}>SILVER <span style={{color:'#000'}}>NGN1,000,000</span></h3>
 
                     <div>
-                      <PiVideoThin className='p-i'/>
-                      <p>Access to videos</p>
+                      <RiPassValidLine className='p-i'/>
+                      <p>12 months validity period</p>
                     </div>
 
                     <div>
-                      <MdOutlineNoteAlt className='p-i'/>
-                      <p>Assignments</p>
+                      <FaBook className='p-i'/>
+                      <p>Access to 3 main courses</p>
                     </div>
 
                     <div>
-                      <TbUsersGroup className='p-i'/>
-                      <p>Physical Meetup</p>
+                      <FaTabletAlt className='p-i'/>
+                      <p>Get 1 tablet for free</p>
                     </div>
 
                     <div>
-                      <FaFileDownload  className='p-i'/>
-                      <p>Downloadable Resources</p>
+                      <SiInternetcomputer className='p-i'/>
+                      <p>Get 1 5G-internet Router</p>
+                    </div>
+
+                    <div>
+                      <FaBook className='p-i'/>
+                      <p>Access to 2 short term courses</p>
+                    </div>
+
+                    <div>
+                      <MdSwitchAccessShortcutAdd className='p-i'/>
+                      <p>Unlimited Access to the Hub</p>
+                    </div>
+
+                    <div>
+                      <RiVipFill className='p-i'/>
+                      <p>VIP slot at the TalkTech event by Techtan.</p>
+                    </div>
+
+                    <div>
+                      <SiAudiotechnica className='p-i'/>
+                      <p>Technical support for your businesses.</p>
+                    </div>
+
+                    <div>
+                      <FaSlideshare className='p-i'/>
+                      <p>0.01% share of Techtan(vested for 3years)</p>
                     </div>
 
                     <div>
                       <GrCertificate className='p-i'/>
-                      <p>Certificate of completion</p>
+                      <p>Certifications</p>
                     </div>
 
-                    <span className='total'>
-                      <span>Total</span>
-                      <span>NGN5000.00</span>
-                      
-                    </span>
 
-
-                    <button className='btn' style={{backgroundColor:'silver'}}><Link to='/enroll'>Sign Up</Link></button>
+                    <button className='btn' style={{backgroundColor:'silver'}}><Link to='/enroll'>Get Your Membership Card</Link></button>
 
 
                 </div>
@@ -234,41 +268,72 @@ const Packages = () => {
 
               
 
-                    <h3>GOLD</h3>
+                    <h3>GOLD <span style={{color:'#000'}}>NGN2,000,000</span></h3>
 
                     <div>
-                      <PiVideoThin className='p-i'/>
-                      <p>Access to videos</p>
+                      <RiPassValidLine className='p-i'/>
+                      <p>18 months validity period</p>
                     </div>
 
                     <div>
-                      <MdOutlineNoteAlt className='p-i'/>
-                      <p>Assignments</p>
+                      <FaBook className='p-i'/>
+                      <p>Access to 2 main courses</p>
                     </div>
 
                     <div>
-                      <TbUsersGroup className='p-i'/>
-                      <p>Physical Meetup</p>
+                      <FaBook className='p-i'/>
+                      <p>Access to 1 course in Blockchain Academy</p>
                     </div>
 
                     <div>
-                      <FaFileDownload  className='p-i'/>
-                      <p>Downloadable Resources</p>
+                      <FaTabletAlt className='p-i'/>
+                      <p>Get 1 tablet for free</p>
+                    </div>
+
+                    <div>
+                      <SiInternetcomputer className='p-i'/>
+                      <p>Get 1 5G-internet Router</p>
+                    </div>
+
+                    <div>
+                      <FaBook className='p-i'/>
+                      <p>Access to 2 short term courses</p>
+                    </div>
+
+                    <div>
+                      <MdSwitchAccessShortcutAdd className='p-i'/>
+                      <p>Unlimited Access to the Hub</p>
+                    </div>
+
+                    <div>
+                      <RiVipFill className='p-i'/>
+                      <p>VIP slot at the TalkTech event by Techtan.</p>
+                    </div>
+
+                    <div>
+                      <SiAudiotechnica className='p-i'/>
+                      <p>Technical support for your businesses.</p>
+                    </div>
+
+                    <div>
+                      <FaSlideshare className='p-i'/>
+                      <p>0.015% share of Techtan(vested for 3years)</p>
+                    </div>
+
+                    <div>
+                      <SiGooglescholar className='p-i'/>
+                      <p>Scholarship to one of your kids/ward or siblings (8 -13 Yrs) to learn a Tech skill at Code Ambassadors. </p>
                     </div>
 
                     <div>
                       <GrCertificate className='p-i'/>
-                      <p>Certificate of completion</p>
+                      <p>Certifications</p>
                     </div>
 
-                    <span className='total'>
-                      <span>Total</span>
-                      <span>NGN5000.00</span>
-                      
-                    </span>
+                    
 
 
-                    <button className='btn'><Link to='/enroll'>Sign Up</Link></button>
+                    <button className='btn'><Link to='/enroll'>Get Your Membership Card</Link></button>
 
 
                 </div>
@@ -322,41 +387,80 @@ const Packages = () => {
 
               
 
-                    <h3 style={{color:'lightblue'}}>DIAMOND</h3>
+                    <h3 style={{color:'lightblue'}}>DIAMOND <span style={{color:'#000'}}>NGN3,500,000</span></h3>
 
                     <div>
-                      <PiVideoThin className='p-i'/>
-                      <p>Access to videos</p>
+                      <RiPassValidLine className='p-i'/>
+                      <p>24 months validity period</p>
                     </div>
 
                     <div>
-                      <MdOutlineNoteAlt className='p-i'/>
-                      <p>Assignments</p>
+                      <FaBook className='p-i'/>
+                      <p>Access to 3 main courses</p>
                     </div>
 
                     <div>
-                      <TbUsersGroup className='p-i'/>
-                      <p>Physical Meetup</p>
+                      <FaBook className='p-i'/>
+                      <p>Access to 1 course in Blockchain Academy</p>
                     </div>
 
                     <div>
-                      <FaFileDownload  className='p-i'/>
-                      <p>Downloadable Resources</p>
+                      <FaTabletAlt className='p-i'/>
+                      <p>Get 1 tablet for free</p>
+                    </div>
+
+                    <div>
+                      <SiInternetcomputer className='p-i'/>
+                      <p>Get 1 5G-internet Router</p>
+                    </div>
+
+                    <div>
+                      <FaBook className='p-i'/>
+                      <p>Access to 3 short term courses</p>
+                    </div>
+
+                    <div>
+                      <MdSwitchAccessShortcutAdd className='p-i'/>
+                      <p>Unlimited Access to the Hub</p>
+                    </div>
+
+                    <div>
+                      <RiVipFill className='p-i'/>
+                      <p>VIP slot at the TalkTech event by Techtan.</p>
+                    </div>
+
+                    <div>
+                      <RiVipFill className='p-i'/>
+                      <p>A website for your business.</p>
+                    </div>
+
+                    <div>
+                      <SiAudiotechnica className='p-i'/>
+                      <p>Technical support for your businesses.</p>
+                    </div>
+
+                    <div>
+                      <FaSlideshare className='p-i'/>
+                      <p>0.025% share of Techtan(vested for 3years)</p>
+                    </div>
+
+                    <div>
+                      <SiGooglescholar className='p-i'/>
+                      <p>Scholarship to two of your kids/ward or siblings (8 -13 Yrs) to learn a Tech skill at Code Ambassadors. </p>
+                    </div>
+
+                    <div>
+                      <LuNetwork  className='p-i'/>
+                      <p>Admission into Techtans Angel network (TAN)</p>
                     </div>
 
                     <div>
                       <GrCertificate className='p-i'/>
-                      <p>Certificate of completion</p>
+                      <p>Certifications</p>
                     </div>
 
-                    <span className='total'>
-                      <span>Total</span>
-                      <span>NGN5000.00</span>
-                      
-                    </span>
 
-
-                    <button className='btn' style={{backgroundColor:'lightblue'}}><Link to='/enroll'>Sign Up</Link></button>
+                    <button className='btn' style={{backgroundColor:'lightblue'}}><Link to='/enroll'>Get Your Membership Card</Link></button>
 
 
                 </div>

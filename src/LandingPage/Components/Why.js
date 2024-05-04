@@ -31,7 +31,7 @@ const Why = () => {
 
                     <div>
                         <LuUsers className='w-icon'/>
-                        <h3>Expert Instructors</h3>
+                        <h3>Expert <br /> Instructors</h3>
                         <p>Our team of experienced instructors consists of industry experts who are passionate about sharing their knowledge and guiding learners through their tech journey with personalized attention and support.</p>
 
                     </div>

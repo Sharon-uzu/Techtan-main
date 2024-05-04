@@ -8,18 +8,19 @@ import { TbUsersGroup } from "react-icons/tb";
 import { FaFileDownload } from "react-icons/fa";
 import { GrCertificate } from "react-icons/gr";
 import { FaUserGroup } from "react-icons/fa6";
-import img from '../../Images/PRODUCT DESIGN_035551.jpg'
+import img from '../../Images/CYBERSECURITY IN BLOCKCHAIN_035530.jpg'
 import { FaStar } from "react-icons/fa";
 import Footer from '../Components/Footer'
 import { IoCheckmarkSharp } from "react-icons/io5";
 import { Link } from 'react-router-dom';
 import { MdTask } from "react-icons/md";
-
+import { MdAssuredWorkload } from "react-icons/md";
+import { FaNetworkWired } from "react-icons/fa";
 
 const VIDEO_PATH = 'https://www.youtube.com/watch?v=0BnuvEoyaZ0';
 
 
-const Product = () => {
+const BlockchainCyber = () => {
 
     const playerRef = useRef(null);
     const { pathname } = useLocation();
@@ -30,14 +31,15 @@ const Product = () => {
   
     }, [pathname]);
 
+    
   return (
     <div className='course'>
       <Header/>
 
       <div className='users'>
-        <h1>Product Design Course</h1>
+        <h1>Blockchain Cybersecurity Course</h1>
         <span className='user'>
-          <FaUserGroup style={{marginRight:'5px'}}/>
+          <FaUserGroup/>
           Maximum of 10 persons in a class.
 
         </span>
@@ -66,13 +68,23 @@ const Product = () => {
           </div>
 
           <div>
-            <AiOutlineProject className='c-i'/>
-            <span>Real-life Projects</span>
+            <MdTask className='c-i'/>
+            <span>Tasks/Assigments</span>
           </div>
 
           <div>
-            <MdTask className='c-i'/>
-            <span>Tasks/Assigments</span>
+            <MdAssuredWorkload className='c-i'/>
+            <span>Automatic Internship/Job placement</span>
+          </div>
+
+          <div>
+            <FaNetworkWired className='c-i'/>
+            <span>StartUp incubation and acceleration</span>
+          </div>
+
+          <div>
+            <AiOutlineProject className='c-i'/>
+            <span>Real-life Projects</span>
           </div>
 
           <div>
@@ -80,7 +92,6 @@ const Product = () => {
             <span>Certificate</span>
           </div>
 
-          
 
 
         </div>
@@ -92,10 +103,10 @@ const Product = () => {
 
           <div>
             <span className='price'>
-              <span>NGN175,000.00</span>
-              <span className='price-slash'>NGN225,000.00</span>
+              <span>NGN450,000.00</span>
+              <span className='price-slash'>NGN550,0000.00</span>
             </span>
-            <Link to='/enroll'><button>Enroll Now</button></Link>
+            <Link to='/blockchainenroll'><button>Enroll Now</button></Link>
 
           </div>
           
@@ -113,7 +124,7 @@ const Product = () => {
         <div className='course2-top'>
 
           <h1>About the Course</h1>
-          <p>Discover the art of product design through our immersive course. Learn industry-leading techniques and earn a globally recognized certificate to launch your career in product design.</p>
+          <p>Our Cybersecurity in Blockchain course offers a comprehensive exploration of blockchain security principles and practices. Gain hands-on experience with cutting-edge technologies and earn a globally recognized certificate upon completion. With automatic job placement assistance post-training, you'll be well-equipped to embark on a successful career in the rapidly evolving field of blockchain cybersecurity.</p>
 
         </div>
 
@@ -178,10 +189,10 @@ const Product = () => {
 
           <div>
             <span className='price'>
-              <span>NGN175,000.00</span>
-              <span className='price-slash'>NGN225,000.00</span>
+              <span>NGN450,000.00</span>
+              <span className='price-slash'>NGN550,000.00</span>
             </span>
-            <button><Link to='/enroll'>Enroll Now</Link></button>
+            <Link to='/blockchainenroll'><button>Enroll Now</button></Link>
           </div>
           
 
@@ -190,39 +201,10 @@ const Product = () => {
 
     </section>
 
-    <div className="learn">
-      <h3>Product Design Tools to learn</h3>
-
-      <div>
-        <h5>Figma</h5>
-      </div>
-
-      <div>
-        <h5>User Experience (UX)</h5>
-      </div>
-
-      <div>
-        <h5>Product Requirement Document (PRD)</h5>
-      </div>
-
-      {/* <div>
-        <h5>Vector Graphics</h5>
-      </div>
-
-      <div>
-        <h5>Adobe Photoshop</h5>
-      </div>
-
-      <div>
-        <h5>Corel Draw</h5>
-      </div> */}
-      
-    </div>
-
 
     <section className='illustrate'>
 
-      <h2>All Product Design courses</h2>
+      <h2>All Graphic Design & Illustration courses</h2>
 
       <div>
         <img src={img} alt="" />
@@ -280,11 +262,38 @@ const Product = () => {
 
     </section>
 
-    
+    <div className="learn">
+      <h3>Graphic Design Student also learn</h3>
+
+      <div>
+        <h5>Adobe illustrator</h5>
+      </div>
+
+      <div>
+        <h5>Logo Design</h5>
+      </div>
+
+      <div>
+        <h5>Design Theory</h5>
+      </div>
+
+      <div>
+        <h5>Vector Graphics</h5>
+      </div>
+
+      <div>
+        <h5>Adobe Photoshop</h5>
+      </div>
+
+      <div>
+        <h5>Corel Draw</h5>
+      </div>
+      
+    </div>
 
     <Footer/>
     </div>
   )
 }
 
-export default Product
+export default BlockchainCyber

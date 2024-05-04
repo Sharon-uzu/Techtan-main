@@ -8,20 +8,18 @@ import { TbUsersGroup } from "react-icons/tb";
 import { FaFileDownload } from "react-icons/fa";
 import { GrCertificate } from "react-icons/gr";
 import { FaUserGroup } from "react-icons/fa6";
-import img from '../../Images/PRODUCT DESIGN_035551.jpg'
+import img from '../../Images/WEBSITE BACKEND_035554.jpg'
 import { FaStar } from "react-icons/fa";
 import Footer from '../Components/Footer'
 import { IoCheckmarkSharp } from "react-icons/io5";
 import { Link } from 'react-router-dom';
 import { MdTask } from "react-icons/md";
 
-
 const VIDEO_PATH = 'https://www.youtube.com/watch?v=0BnuvEoyaZ0';
 
+const Backend = () => {
 
-const Product = () => {
-
-    const playerRef = useRef(null);
+  const playerRef = useRef(null);
     const { pathname } = useLocation();
 
     useEffect(() => {
@@ -35,9 +33,9 @@ const Product = () => {
       <Header/>
 
       <div className='users'>
-        <h1>Product Design Course</h1>
+        <h1>Web Development(Backend) Course</h1>
         <span className='user'>
-          <FaUserGroup style={{marginRight:'5px'}}/>
+          <FaUserGroup style={{marginRight:'4px'}}/>
           Maximum of 10 persons in a class.
 
         </span>
@@ -80,8 +78,6 @@ const Product = () => {
             <span>Certificate</span>
           </div>
 
-          
-
 
         </div>
 
@@ -92,11 +88,10 @@ const Product = () => {
 
           <div>
             <span className='price'>
-              <span>NGN175,000.00</span>
-              <span className='price-slash'>NGN225,000.00</span>
+              <span>NGN300,000.00</span>
+              <span className='price-slash'>NGN400,000.00</span>
             </span>
             <Link to='/enroll'><button>Enroll Now</button></Link>
-
           </div>
           
 
@@ -113,7 +108,7 @@ const Product = () => {
         <div className='course2-top'>
 
           <h1>About the Course</h1>
-          <p>Discover the art of product design through our immersive course. Learn industry-leading techniques and earn a globally recognized certificate to launch your career in product design.</p>
+          <p>Unlock the secrets of backend development with our immersive course. Gain practical experience and earn a globally recognized certificate to excel in backend development.</p>
 
         </div>
 
@@ -178,8 +173,8 @@ const Product = () => {
 
           <div>
             <span className='price'>
-              <span>NGN175,000.00</span>
-              <span className='price-slash'>NGN225,000.00</span>
+              <span>NGN300,000.00</span>
+              <span className='price-slash'>NGN400,000.00</span>
             </span>
             <button><Link to='/enroll'>Enroll Now</Link></button>
           </div>
@@ -190,30 +185,31 @@ const Product = () => {
 
     </section>
 
+
     <div className="learn">
-      <h3>Product Design Tools to learn</h3>
+      <h3>Backend Tools to learn</h3>
 
       <div>
-        <h5>Figma</h5>
+        <h5>PHP</h5>
       </div>
 
       <div>
-        <h5>User Experience (UX)</h5>
+        <h5>Mysql</h5>
       </div>
 
       <div>
-        <h5>Product Requirement Document (PRD)</h5>
+        <h5>NodeJS</h5>
+      </div>
+
+      <div>
+        <h5>JavaScript</h5>
+      </div>
+
+      <div>
+        <h5>Python</h5>
       </div>
 
       {/* <div>
-        <h5>Vector Graphics</h5>
-      </div>
-
-      <div>
-        <h5>Adobe Photoshop</h5>
-      </div>
-
-      <div>
         <h5>Corel Draw</h5>
       </div> */}
       
@@ -222,7 +218,7 @@ const Product = () => {
 
     <section className='illustrate'>
 
-      <h2>All Product Design courses</h2>
+      <h2>All Web Development courses</h2>
 
       <div>
         <img src={img} alt="" />
@@ -287,4 +283,4 @@ const Product = () => {
   )
 }
 
-export default Product
+export default Backend

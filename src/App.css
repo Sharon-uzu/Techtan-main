@@ -491,7 +491,13 @@ header nav ul li .active{
   width: 15%;
   height: 30px;
   object-fit: contain;
-  margin-bottom: 50px;
+  margin-bottom: 12px;
+}
+
+.pkg p{
+  font-size: 18px;
+  color: #2A3469;
+  margin-bottom: 100px;
 }
 
 .view{
@@ -593,15 +599,23 @@ header nav ul li .active{
   padding: 10px;
   border-radius: 10px;
   border: 1px solid  #000;
+  overflow-y: scroll;
+  height: 95vh;
 }
 
 .pack h3{
   font-size: 30px;
-  padding: 30px 0;
+  padding: 10px 0;
   border-bottom: 1px solid #000;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   color: gold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.pack h3 span{
+  font-size: 22px;
 }
 
 
@@ -1059,6 +1073,7 @@ footer section .form .f-form button img{
   border: 1px solid #868786;
   padding-top: 30px;
   padding-bottom: 40px;
+  justify-content: space-between;
 }
 
 .course1 .course-left h1{
@@ -1069,7 +1084,7 @@ footer section .form .f-form button img{
 }
 
 .course1 .course-left div{
-  width: 49%;
+  width: 47%;
   margin-bottom: 20px;
   display: flex;
   /* align-items: center; */
@@ -1077,7 +1092,7 @@ footer section .form .f-form button img{
 
 .course1 .course-left div .c-i{
   font-size: 26px;
-  margin-right: 20px;
+  margin-right: 8px;
 }
 
 .course1 .course-left div span{
@@ -1508,6 +1523,11 @@ footer section .form .f-form button img{
   justify-content: space-between;
 }
 
+.enrollment .form .b-batch{
+  width: 70%;
+  margin: auto;
+}
+
 .enrollment .form .batch .div{
   width: 32%;
   border: 1px solid #000;
@@ -1515,6 +1535,10 @@ footer section .form .f-form button img{
   text-align: center;
   cursor: pointer;
   position: relative;
+}
+
+.enrollment .form .b-batch .div{
+  width: 45%;
 }
 
 .enrollment .form .batch .div .dk{
@@ -1745,14 +1769,14 @@ footer section .form .f-form button img{
 
 .courses2-page section .c2-info img{
   width: 100%;
-  height: 30vh;
-  object-fit: cover;
+  /* height: 35vh; */
+  /* object-fit: cover; */
   
 }
 
 .courses2-page section .c2-info div{
   width: 98%;
-  background-color: hsla(0, 0%, 0%,.7);
+  background-color: hsla(0, 0%, 0%,.6);
   padding: 0 1%;
   height: 50px;
   display: flex;
@@ -2024,6 +2048,7 @@ margin-bottom: 0;
   width: 70%;
   padding: 35px 2%;
   background-color: #fff;
+
   
 }
 .modal .modal-c .close{

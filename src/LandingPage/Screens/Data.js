@@ -1,19 +1,19 @@
 import ReactPlayer from 'react-player';
 import React, {  useEffect, useRef } from "react";
 import {  useLocation } from 'react-router-dom';
-
-import Header from '../Components/Header'
-import { PiVideoThin } from "react-icons/pi";
+import Header from '../Components/Header';
+import { AiOutlineProject } from "react-icons/ai";
 import { MdOutlineNoteAlt } from "react-icons/md";
 import { TbUsersGroup } from "react-icons/tb";
 import { FaFileDownload } from "react-icons/fa";
 import { GrCertificate } from "react-icons/gr";
 import { FaUserGroup } from "react-icons/fa6";
-import img from '../../Images/product.webp'
+import img from '../../Images/DATA ANALYTICS_035541.jpg'
 import { FaStar } from "react-icons/fa";
 import Footer from '../Components/Footer'
 import { IoCheckmarkSharp } from "react-icons/io5";
 import { Link } from 'react-router-dom';
+import { MdTask } from "react-icons/md";
 
 const VIDEO_PATH = 'https://www.youtube.com/watch?v=0BnuvEoyaZ0';
 
@@ -34,10 +34,11 @@ const Data = () => {
       <Header/>
 
       <div className='users'>
-        <h1>Data Analysis Courses</h1>
+        <h1>Data Analysis Course</h1>
         <span className='user'>
           <FaUserGroup/>
-          3,985,238 learners
+          Maximum of 10 persons in a class.
+
         </span>
       </div>
 
@@ -49,31 +50,34 @@ const Data = () => {
         <div className='course-left'>
           <h1>This Course Includes</h1>
           <div>
-            <PiVideoThin className='c-i'/>
-            <span>Access to videos</span>
+            <TbUsersGroup className='c-i'/>
+            <span>Physical and Intensive training</span>
           </div>
 
           <div>
             <FaFileDownload className='c-i'/>
-            <span>Downloadable Resources</span>
+            <span>Installation of software/tools</span>
           </div>
 
           <div>
             <MdOutlineNoteAlt className='c-i'/>
-            <span>Assignments</span>
+            <span>Hands-On Practicals</span>
+          </div>
+
+          <div>
+            <AiOutlineProject className='c-i'/>
+            <span>Real-life Projects</span>
+          </div>
+
+          <div>
+            <MdTask className='c-i'/>
+            <span>Tasks/Assigments</span>
           </div>
 
           <div>
             <GrCertificate className='c-i'/>
-            <span>Certificate of completion</span>
+            <span>Certificate</span>
           </div>
-
-          <div>
-            <TbUsersGroup className='c-i'/>
-            <span>Physical Meetup</span>
-          </div>
-
-
         </div>
 
 
@@ -83,8 +87,8 @@ const Data = () => {
 
           <div>
             <span className='price'>
-              <span>NGN5000.00</span>
-              <span className='price-slash'>NGN50000.00</span>
+              <span>NGN200,000.00</span>
+              <span className='price-slash'>NGN250,000.00</span>
             </span>
             <Link to='/enroll'><button>Enroll Now</button></Link>
 
@@ -104,7 +108,7 @@ const Data = () => {
         <div className='course2-top'>
 
           <h1>About the Course</h1>
-          <p>Personal Effectiveness is the ability to get the most important tasks done with maximum time efficiency. Without the limitation of time, just about anyone can get any task done, but the ability to carry out high value and high priority tasks within the shortest possible time frame is one that only those who have mastered Personal Effectiveness possess.</p>
+          <p>Explore the realm of data analytics with our comprehensive course. Develop essential skills and earn a globally recognized certificate to embark on a rewarding career in data analytics.</p>
 
         </div>
 
@@ -169,8 +173,8 @@ const Data = () => {
 
           <div>
             <span className='price'>
-              <span>NGN5000.00</span>
-              <span className='price-slash'>NGN50000.00</span>
+              <span>NGN200,000.00</span>
+              <span className='price-slash'>NGN250,000.00</span>
             </span>
             <button><Link to='/enroll'>Enroll Now</Link></button>
           </div>
@@ -180,6 +184,35 @@ const Data = () => {
 
 
     </section>
+
+    <div className="learn">
+      <h3>Data Analysis Tools to learn</h3>
+
+      <div>
+        <h5>Excel</h5>
+      </div>
+
+      <div>
+        <h5>Power BI</h5>
+      </div>
+
+      <div>
+        <h5>SQL</h5>
+      </div>
+
+      <div>
+        <h5>Python</h5>
+      </div>
+
+      <div>
+        <h5>Tableau</h5>
+      </div>
+
+      {/* <div>
+        <h5>Corel Draw</h5>
+      </div> */}
+      
+    </div>
 
 
     <section className='illustrate'>
@@ -242,34 +275,7 @@ const Data = () => {
 
     </section>
 
-    <div className="learn">
-      <h3>Data Analysis Student also learn</h3>
-
-      <div>
-        <h5>Adobe illustrator</h5>
-      </div>
-
-      <div>
-        <h5>Logo Design</h5>
-      </div>
-
-      <div>
-        <h5>Design Theory</h5>
-      </div>
-
-      <div>
-        <h5>Vector Graphics</h5>
-      </div>
-
-      <div>
-        <h5>Adobe Photoshop</h5>
-      </div>
-
-      <div>
-        <h5>Corel Draw</h5>
-      </div>
-      
-    </div>
+    
 
     <Footer/>
     </div>

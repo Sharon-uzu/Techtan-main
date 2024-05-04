@@ -4,12 +4,15 @@ import Header from '../Components/Header'
 import img from '../../Images/course.jpeg'
 import { Link } from 'react-router-dom'
 import Footer from '../Components/Footer'
-import data from '../../Images/data.jpeg'
-import product from '../../Images/product.webp'
-import web from '../../Images/web.png'
-import app from '../../Images/app.avif'
-import digital from '../../Images/digital.avif'
-import graphics from '../../Images/graphics.webp'
+import data from '../../Images/DATA ANALYTICS_035541.jpg'
+import product from '../../Images/PRODUCT DESIGN_035551.jpg'
+import web from '../../Images/WEBSITE FRONT END_035556.jpg'
+import back from '../../Images/WEBSITE BACKEND_035554.jpg'
+import full from '../../Images/WEBSITE FULLSTACK_035557.jpg'
+import cyber from '../../Images/CYBERSECURITY_035540.jpg'
+import science from '../../Images/DATA SCIENCE_035543 (1).jpg'
+import digital from '../../Images/DIGITAL MARKETING_035545.jpg'
+import productmgt from '../../Images/PRODUCT MANAGEMENT_035553.jpg'
 import { FaMoneyBill } from "react-icons/fa6";
 import { FaRegClock } from "react-icons/fa";
 import Faq from '../Components/Faq'
@@ -24,6 +27,99 @@ const Courses = () => {
       document.body.style.overflow = 'auto'; // Enable scrolling
   
     }, [pathname]);
+
+
+    const Course = [
+        {
+            id:1,
+            name:'Product Design',
+            text:'Discover the art of product design through our immersive course. Learn industry-leading techniques and earn a globally recognized certificate to launch your career in product design.',
+            img:product,
+            link:'/product',
+            price:'₦175,000',
+            period:'10-12weeks'
+        },
+
+        {
+            id:2,
+            name:'Digital Marketing',
+            text:"Unlock the power of digital marketing with our comprehensive course. Gain practical skills and earn a globally recognized certificate to kickstart your career in digital marketing.",
+            img:digital,
+            link:'/marketing',
+            price:'₦150,000',
+            period:'12-14weeks'
+        },
+
+        {
+            id:3,
+            name:'Data Analysis',
+            text:'Explore the realm of data analytics with our comprehensive course. Develop essential skills and earn a globally recognized certificate to embark on a rewarding career in data analytics.',
+            img:data,
+            link:'/data',
+            price:'₦200,000',
+            period:'14-16weeks'
+        },
+
+        {
+            id:4,
+            name:'Website Development(Frontend)',
+            text:'Master frontend development with our hands-on course. Learn essential skills and earn a globally recognized certificate to become a skilled frontend developer.',
+            img:web,
+            link:'/web',
+            price:'₦250,000',
+            period:'16-17weeks'
+        },
+
+        {
+            id:5,
+            name:'Website Development(Backend)',
+            text:'Unlock the secrets of backend development with our immersive course. Gain practical experience and earn a globally recognized certificate to excel in backend development.',
+            img:back,
+            link:'/backend',
+            price:'₦300,000',
+            period:'16-18weeks'
+        },
+
+        {
+            id:6,
+            name:'Fullstack Web Development',
+            text:'Become a fullstack web developer with our comprehensive course. Learn both frontend and backend development, and earn a globally recognized certificate to launch your career.',
+            img:full,
+            link:'/fullstack',
+            price:'₦500,000',
+            period:'24-25weeks'
+        },
+
+        {
+            id:7,
+            name:'Cybersecurity',
+            text:'Dive into the world of cybersecurity with our intensive course. Learn cutting-edge techniques and earn a globally recognized certificate to become a cybersecurity expert.',
+            img:cyber,
+            link:'/cybersecurity',
+            price:'₦250,000',
+            period:'14-16weeks'
+        },
+
+        {
+            id:8,
+            name:'Product Management',
+            text:'Master the essentials of product management with our dynamic course. Gain hands-on experience and earn a globally recognized certificate to excel in product management roles.',
+            img:productmgt,
+            link:'/product-mgt',
+            price:'₦175,000',
+            period:'10-12weeks'
+        },
+
+        {
+            id:9,
+            name:'Data Science',
+            text:'Delve into the field of data science with our in-depth course. Gain practical knowledge and earn a globally recognized certificate to become a proficient data scientist.',
+            img:science,
+            link:'/datascience',
+            price:'₦350,000',
+            period:'22-24weeks'
+        },
+    ]
 
   return (
     <div>
@@ -43,117 +139,40 @@ const Courses = () => {
 
         <section className='courses2-page'>
             <h2>Available Courses</h2>
+        
 
             <section>
 
-                <div className='c2-info'>
-                    <img src={data} alt="" />
-                    <div>
-                        <span>
-                            <FaMoneyBill className='cs-i'/>
-                            ₦100,000
-                        </span>
-
-                        <span>
-                            <FaRegClock className='cs-i'/>
-                            3mnths
-                        </span>
-                    </div>
-                    <h3>Data Analysis</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid repudiandae quia veniam earum, deserunt fuga minus sequi nihil corporis atque quidem, non molestias dolorem labore provident blanditiis, magnam tenetur incidunt?</p>
-                    <Link to='/data'><button>View Course</button></Link>
-                </div>
-
-                <div className='c2-info'>
-                    <img src={product} alt="" />
-                    <div>
-                        <span>
-                            <FaMoneyBill className='cs-i'/>
-                            ₦100,000
-                        </span>
-
-                        <span>
-                            <FaRegClock className='cs-i'/>
-                            3mnths
-                        </span>
-                    </div>
-                    <h3>Product Design</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci a atque illum deserunt consequatur alias, id cum aut tempora ipsa! Cupiditate vitae voluptates iusto numquam tempore, ipsa consequuntur quidem sapiente.</p>
-                    <Link to='/product'><button>View Course</button></Link>
-                </div>
 
 
-                <div className='c2-info'>
-                    <img src={web} alt="" />
-                    <div>
-                        <span>
-                            <FaMoneyBill className='cs-i'/>
-                            ₦100,000
-                        </span>
+                {
+                    Course.map((course) =>{
 
-                        <span>
-                            <FaRegClock className='cs-i'/>
-                            3mnths
-                        </span>
-                    </div>
-                    <h3>Web Development</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eius voluptatem aliquid omnis delectus laudantium minus rem. Tenetur assumenda repudiandae dignissimos, sint laudantium, rem iusto vel fugit odio unde sequi!</p>
-                    <Link to='/web'><button>View Course</button></Link>
-                </div>
+                        return(
 
-                <div className='c2-info'>
-                    <img src={app} alt="" />
-                    <div>
-                        <span>
-                            <FaMoneyBill className='cs-i'/>
-                            ₦100,000
-                        </span>
+                            <div className='c2-info'>
+                                <img src={course.img} alt="" />
+                                <div>
+                                    <span>
+                                        <FaMoneyBill className='cs-i'/>
+                                        {course.price}
+                                    </span>
+            
+                                    <span>
+                                        <FaRegClock className='cs-i'/>
+                                        {course.period}
+                                    </span>
+                                </div>
+                                <h3>{course.name}</h3>
+                                <p>{course.text}</p>
+                                <Link to={course.link}><button>View Course</button></Link>
+                        </div>
 
-                        <span>
-                            <FaRegClock className='cs-i'/>
-                            3mnths
-                        </span>
-                    </div>
-                    <h3>Mobile App Development</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati laborum assumenda, quis iure sunt pariatur omnis aperiam rerum quos voluptate excepturi voluptatibus quidem quibusdam autem aspernatur. Vero magnam voluptas quisquam.</p>
-                    <Link to='/mobile'><button>View Course</button></Link>
-                </div>
-
-                <div className='c2-info'>
-                    <img src={digital} alt="" />
-                    <div>
-                        <span>
-                            <FaMoneyBill className='cs-i'/>
-                            ₦100,000
-                        </span>
-
-                        <span>
-                            <FaRegClock className='cs-i'/>
-                            3mnths
-                        </span>
-                    </div>
-                    <h3>Digital/Content Creation</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolores corporis maiores laboriosam architecto vitae hic eum et velit, magnam at ipsa tempora soluta dicta dolorem debitis alias, fuga repellat?</p>
-                    <Link to='marketing'><button>View Course</button></Link>
-                </div>
-
-                <div className='c2-info'>
-                    <img src={graphics} alt="" />
-                    <div>
-                        <span>
-                            <FaMoneyBill className='cs-i'/>
-                            ₦100,000
-                        </span>
-
-                        <span>
-                            <FaRegClock className='cs-i'/>
-                            3mnths
-                        </span>
-                    </div>
-                    <h3>Graphics Design</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quo vitae corporis laudantium, placeat quaerat nihil? Inventore repellendus laboriosam aperiam dicta, soluta repellat facere distinctio numquam odio, excepturi voluptas. Animi!</p>
-                    <Link to='graphics'><button>View Course</button></Link>
-                </div>
+                        )
+                            
+                })
+                    
+                }
 
             </section>
         </section>

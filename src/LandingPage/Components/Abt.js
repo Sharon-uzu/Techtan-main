@@ -15,7 +15,7 @@ const About = () => {
             <div className='hero-c'>
 
                 <div className='h-l'>
-                <h2>Empowering Classy Techies: Crafting World-Class Skills at Techtan</h2>
+                <h2>Raising World-Class Techies at Techtan</h2>
                 <p>Welcome to Techtan, where sophistication meets technology in a space tailored for grownups, working-class professionals, and individuals who value standard trainings and a refined learning environment.</p>
                 <button><Link to='/about'>Learn More</Link></button>
                 </div>

@@ -1,42 +1,47 @@
 import ReactPlayer from 'react-player';
 import React, {useEffect, useRef } from "react";
-import { useLocation } from 'react-router-dom';
+import {useLocation } from 'react-router-dom';
 import Header from '../Components/Header'
-import { PiVideoThin } from "react-icons/pi";
+import { AiOutlineProject } from "react-icons/ai";
 import { MdOutlineNoteAlt } from "react-icons/md";
 import { TbUsersGroup } from "react-icons/tb";
 import { FaFileDownload } from "react-icons/fa";
 import { GrCertificate } from "react-icons/gr";
 import { FaUserGroup } from "react-icons/fa6";
-import img from '../../Images/product.webp'
+import img from '../../Images/PRODUCT MANAGEMENT_035553.jpg'
 import { FaStar } from "react-icons/fa";
 import Footer from '../Components/Footer'
 import { IoCheckmarkSharp } from "react-icons/io5";
 import { Link } from 'react-router-dom';
+import { MdTask } from "react-icons/md";
+
 
 const VIDEO_PATH = 'https://www.youtube.com/watch?v=0BnuvEoyaZ0';
 
 
-const Mobile = () => {
 
-    const playerRef = useRef(null);
-    const { pathname } = useLocation();
+const ProductMgt = () => {
 
-    useEffect(() => {
-      window.scrollTo(0, 0);
-      document.body.style.overflow = 'auto'; // Enable scrolling
-  
-    }, [pathname]);
+  const playerRef = useRef(null);
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    document.body.style.overflow = 'auto'; // Enable scrolling
+
+  }, [pathname]);
+
 
   return (
     <div className='course'>
       <Header/>
 
       <div className='users'>
-        <h1>Mobile App Courses</h1>
+        <h1>Product Management Course</h1>
         <span className='user'>
-          <FaUserGroup/>
-          3,985,238 learners
+          <FaUserGroup style={{marginRight:'5px'}}/>
+          Maximum of 10 persons in a class.
+
         </span>
       </div>
 
@@ -48,34 +53,36 @@ const Mobile = () => {
         <div className='course-left'>
           <h1>This Course Includes</h1>
           <div>
-            <PiVideoThin className='c-i'/>
-            <span>Access to videos</span>
+            <TbUsersGroup className='c-i'/>
+            <span>Physical and Intensive training</span>
           </div>
 
           <div>
             <FaFileDownload className='c-i'/>
-            <span>Downloadable Resources</span>
+            <span>Installation of software/tools</span>
           </div>
 
           <div>
             <MdOutlineNoteAlt className='c-i'/>
-            <span>Assignments</span>
+            <span>Hands-On Practicals</span>
+          </div>
+
+          <div>
+            <AiOutlineProject className='c-i'/>
+            <span>Real-life Projects</span>
+          </div>
+
+          <div>
+            <MdTask className='c-i'/>
+            <span>Tasks/Assigments</span>
           </div>
 
           <div>
             <GrCertificate className='c-i'/>
-            <span>Certificate of completion</span>
+            <span>Certificate</span>
           </div>
 
-          <div>
-            <TbUsersGroup className='c-i'/>
-            <span>Physical Meetup</span>
-          </div>
-
-          <div>
-            <TbUsersGroup className='c-i'/>
-            <span>Physical Meetup</span>
-          </div>
+          
 
 
         </div>
@@ -87,8 +94,8 @@ const Mobile = () => {
 
           <div>
             <span className='price'>
-              <span>NGN5000.00</span>
-              <span className='price-slash'>NGN50000.00</span>
+              <span>NGN175,000.00</span>
+              <span className='price-slash'>NGN225,000.00</span>
             </span>
             <Link to='/enroll'><button>Enroll Now</button></Link>
 
@@ -108,7 +115,7 @@ const Mobile = () => {
         <div className='course2-top'>
 
           <h1>About the Course</h1>
-          <p>Personal Effectiveness is the ability to get the most important tasks done with maximum time efficiency. Without the limitation of time, just about anyone can get any task done, but the ability to carry out high value and high priority tasks within the shortest possible time frame is one that only those who have mastered Personal Effectiveness possess.</p>
+          <p>Master the essentials of product management with our dynamic course. Gain hands-on experience and earn a globally recognized certificate to excel in product management roles.</p>
 
         </div>
 
@@ -173,8 +180,8 @@ const Mobile = () => {
 
           <div>
             <span className='price'>
-              <span>NGN5000.00</span>
-              <span className='price-slash'>NGN50000.00</span>
+              <span>NGN175,000.00</span>
+              <span className='price-slash'>NGN225,000.00</span>
             </span>
             <button><Link to='/enroll'>Enroll Now</Link></button>
           </div>
@@ -186,9 +193,59 @@ const Mobile = () => {
     </section>
 
 
+    <div className="learn">
+      <h3>Product Management Tools to learn</h3>
+
+      <div>
+        <h5>Jira</h5>
+      </div>
+
+      <div>
+        <h5>Slack</h5>
+      </div>
+
+      <div>
+        <h5>Whimsical</h5>
+      </div>
+
+      <div>
+        <h5>Sketch Asana</h5>
+      </div>
+
+      <div>
+        <h5>Roadmunk</h5>
+      </div>
+
+      <div>
+        <h5>Trello</h5>
+      </div>
+
+      <div>
+        <h5>GitHub</h5>
+      </div>
+
+      <div>
+        <h5>Prodpad</h5>
+      </div>
+
+      <div>
+        <h5>Google Analytics</h5>
+      </div>
+
+      <div>
+        <h5>Monday.com</h5>
+      </div>
+
+      <div>
+        <h5>Confluence</h5>
+      </div>
+      
+    </div>
+
+
     <section className='illustrate'>
 
-      <h2>All Mobile App Development courses</h2>
+      <h2>All Product Design courses</h2>
 
       <div>
         <img src={img} alt="" />
@@ -246,38 +303,11 @@ const Mobile = () => {
 
     </section>
 
-    <div className="learn">
-      <h3>Graphic Design Student also learn</h3>
-
-      <div>
-        <h5>Adobe illustrator</h5>
-      </div>
-
-      <div>
-        <h5>Logo Design</h5>
-      </div>
-
-      <div>
-        <h5>Design Theory</h5>
-      </div>
-
-      <div>
-        <h5>Vector Graphics</h5>
-      </div>
-
-      <div>
-        <h5>Adobe Photoshop</h5>
-      </div>
-
-      <div>
-        <h5>Corel Draw</h5>
-      </div>
-      
-    </div>
+    
 
     <Footer/>
     </div>
   )
 }
 
-export default Mobile
+export default ProductMgt

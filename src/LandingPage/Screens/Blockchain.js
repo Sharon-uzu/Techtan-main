@@ -5,9 +5,9 @@ import { FaEarListen, FaHandshakeSimple, FaLandmarkDome } from 'react-icons/fa6'
 import { FaClock, FaComment, FaLaptop, FaPlane, FaSmile } from 'react-icons/fa';
 import { Link } from 'react-router-dom'
 import Footer from '../Components/Footer'
-import app from '../../Images/app.avif'
-import digital from '../../Images/digital.avif'
-import graphics from '../../Images/graphics.webp'
+import app from '../../Images/FULLSTACK BLOCKCHAIN DEVELOPMENT_040804.jpg'
+import digital from '../../Images/CYBERSECURITY IN BLOCKCHAIN_035530.jpg'
+import graphics from '../../Images/PRODUCT DESIGN IN BLOCKCHAIN_035549.jpg'
 import { FaMoneyBill } from "react-icons/fa6";
 import { FaRegClock } from "react-icons/fa";
 
@@ -37,7 +37,7 @@ const Blockchain = () => {
 
                 <p>At Techtan's Blockchain Academy, we are committed to fostering a dynamic learning environment where creativity, collaboration, and innovation thrive. </p>
 
-                <Link to='/enroll' style={{cursor:'pointer'}}><button style={{cursor:'pointer'}}>Join Us Now</button></Link>
+                <Link to='/blockchainenroll' style={{cursor:'pointer'}}><button style={{cursor:'pointer'}}>Join Us Now</button></Link>
             </div>
 
             <div className='block1-r'>
@@ -136,17 +136,17 @@ const Blockchain = () => {
                     <div>
                         <span>
                             <FaMoneyBill className='cs-i'/>
-                            ₦100,000
+                            ₦600,000
                         </span>
 
                         <span>
                             <FaRegClock className='cs-i'/>
-                            3mnths
+                            6months
                         </span>
                     </div>
                     <h3>Blockchain Development (Full-stack)</h3>
                     <p>Dive into the world of blockchain dev with our comprehensive full-stack program. From understanding the fundamentals of blockchain tech to mastering smart contract development and decentralized application (DApp) deployment, this component covers all aspects of blockchain development. Gain hands-on experience with popular blockchain platforms and tools as you build real-world projects and applications.</p>
-                    <Link to='/mobile'><button>View Course</button></Link>
+                    <Link to='/blockchainfullstack'><button>View Course</button></Link>
                 </div>
 
                 <div className='c2-info'>
@@ -154,17 +154,17 @@ const Blockchain = () => {
                     <div>
                         <span>
                             <FaMoneyBill className='cs-i'/>
-                            ₦100,000
+                            ₦300,000
                         </span>
 
                         <span>
                             <FaRegClock className='cs-i'/>
-                            3mnths
+                            3months
                         </span>
                     </div>
                     <h3>Product Design in Blockchain</h3>
                     <p>Explore the intersection of design and blockchain technology with our product design component. Learn how to conceptualize, prototype, and design user-friendly interfaces for blockchain-based applications and decentralized platforms. From user research to wireframing and prototyping, discover how to create engaging and intuitive user experiences that leverage the unique capabilities of blockchain technology.</p>
-                    <Link to='marketing'><button>View Course</button></Link>
+                    <Link to='/blockchainproduct'><button>View Course</button></Link>
                 </div>
 
                 <div className='c2-info'>
@@ -172,17 +172,17 @@ const Blockchain = () => {
                     <div>
                         <span>
                             <FaMoneyBill className='cs-i'/>
-                            ₦100,000
+                            ₦450,000
                         </span>
 
                         <span>
                             <FaRegClock className='cs-i'/>
-                            3mnths
+                            5months
                         </span>
                     </div>
                     <h3>Cybersecurity in Blockchain:</h3>
                     <p>Delve into the critical field of cybersecurity within the context of blockchain technology. This component covers essential topics such as blockchain security principles, common vulnerabilities, threat modeling, and secure coding practices. Learn how to assess and mitigate security risks in blockchain systems, protect sensitive data, and ensure the integrity and confidentiality of transactions on decentralized networks.</p>
-                    <Link to='graphics'><button>View Course</button></Link>
+                    <Link to='/blockchaincyber'><button>View Course</button></Link>
                 </div>
 
             </section>
